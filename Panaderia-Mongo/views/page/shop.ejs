@@ -1,0 +1,28 @@
+<%- include('../partials/head')%>
+<div class="caja-title">
+<h1 class="title">Todos los productos</h1>
+</div>
+<div class="product-container">
+    <% products.forEach(product => { %>
+        
+        <div class="product-card">
+            <img src="/images/<%= product.imagen %>" alt="">
+            <h3><%= product.nombre %> </h3>
+            
+            <div class="description"><p><%= product.descripcion %> </p></div>
+           
+            <div class="price"><h4>Precio: <%= product.precio %></h4> </div>
+            <button class="btn-comprar"><a href="/productos/carrito/<%= product.id%>">Comprar</a></button>
+            
+        </div>
+
+        <% }) %>
+</div>
+
+
+
+    
+
+
+
+<%- include('../partials/footer')%>

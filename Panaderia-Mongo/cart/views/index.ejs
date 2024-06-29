@@ -1,0 +1,17 @@
+<%- include('partials/header') %>
+<main>
+    <h2>Productos</h2>
+    <a href="/add-product">Agregar nuevo producto</a>
+    <ul>
+        <% products.forEach(product => { %>
+            <li>
+                <strong><%= product.name %></strong> - $<%= product.price.toFixed(2) %>
+                <form action="/add-to-cart" method="POST" style="display: inline;">
+                    <input type="hidden" name="productId" value="<%= product.id %>">
+                    <button type="submit">Agregar al carrito</button>
+                </form>
+            </li>
+        <% }) %>
+    </ul>
+</main>
+<%- include('partials/footer') %>

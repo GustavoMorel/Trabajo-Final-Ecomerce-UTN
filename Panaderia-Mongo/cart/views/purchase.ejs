@@ -1,0 +1,13 @@
+<%- include('partials/header') %>
+<main>
+    <h2>Compra Realizada</h2>
+    <p>Gracias por tu compra. Aquí están los detalles:</p>
+    <ul>
+        <% cart.forEach(item => { %>
+            <li><strong><%= item.name %></strong> - $<%= item.price.toFixed(2) %></li>
+        <% }) %>
+    </ul>
+    <p>Total: $<%= cart.reduce((total, item) => total + item.price, 0).toFixed(2) %></p>
+    <a href="/">Volver al inicio</a>
+</main>
+<%- include('partials/footer') %>

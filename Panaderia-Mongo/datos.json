@@ -1,0 +1,62 @@
+[
+    {
+        "nombre": "Pan Frances",
+        "descripcion": "Receta tradicional. Se compone principalmente de harina, levadura, agua y sal. La ley francesa prohíbe agregar aceite o grasa al pan francés.",
+        "precio": 900,
+        "imagen": "pan_frances.jpg"
+    },
+    {
+        "nombre": "Pan Italiano",
+        "descripcion": "Receta tradicional. Contiene aceite de oliva, leche y, a veces, azúcar." ,
+        "precio": 900,
+        "imagen": "pan-italiano.jpg"
+    },
+    {
+        "nombre": "Pan Felipe",
+        "descripcion": "Receta propia. Bajo contenido de sodio y azucar" ,
+        "precio": 900,
+        "imagen": "pan-felipe.jpg"
+    },
+    {
+        "nombre": "Pan Integral",
+        "descripcion": "Receta propia. Pan. 500 grs harina integral. 4 cdas aceite. 1 cdta sal fina. 200 ml agua tibia" ,
+        "precio": 1200,
+        "imagen": "pan-integral.jpg"
+    },
+    {
+        "nombre": "Torta Galesa",
+        "descripcion": "Aperitivos tradicionales de la cocina galesa. Azúcar Rubia, Bicarbonato, Canela en polvo, Coñac, Frutos secos(nuez, Avellana, Almendra), Harina 0000, Huevo, Infusión De Te, Jugo De Limón." ,
+        "precio": 2500,
+        "imagen": "torta-galesa.jpg"
+    },
+    {
+        "nombre": "Tarta de Limón",
+        "descripcion": "La tarta de limón y merengue, ideal para servir durante las reuniones familiares y amigos. harina, huevos, ½ taza de jugo de limón, taza de leche condensada, mantequilla, azúcar, polvos de hornear" ,
+        "precio": 1500,
+        "imagen": "Pie-de-Limon.jpg"
+    },
+    {
+        "nombre": "Sandwich Bondiola",
+        "descripcion": "Bondiola, Mayonesa, Pan Felipe Integral, Queso Dambo, Rúcula y Tomate." ,
+        "precio": 850,
+        "imagen": "sandwich-bondiola.jpg"
+    },
+    {
+        "nombre": "Sandwich Integral",
+        "descripcion": "Semillas de lino, Sal, Azúcar, Agua, Levadura, Harina integral, Semillas De Sésamo, Semillas de girasol, Harina 000",
+        "precio": 1150,
+        "imagen": "sandwich-integral.jpg"
+    },
+    {
+        "nombre": "Sandwich de Atún y pollo",
+        "descripcion": "pechuga de pollo, lata atún, berenjena grande, zucchini grande, Cebolla, morrón rojo, dientes ajo picado",
+        "precio": 900,
+        "imagen": "sandwich-atun.jpg"
+    },
+    {
+        "nombre": "Pan de Molde",
+        "descripcion": "harina de trigo, agua, leche entera, mantequilla, azúcar, sal fina, levadura fresca, Aceite de oliva virgen extra.",
+        "precio": 875,
+        "imagen": "pan-molde.jpg"
+    }
+]

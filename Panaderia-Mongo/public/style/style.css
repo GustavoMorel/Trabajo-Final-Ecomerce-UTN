@@ -1,0 +1,1028 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*Header*/
+.right-icons {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    padding: 10px 20px;
+    background-color: #1a1818;
+}
+
+.right-icons i {
+    color: #fff;
+    font-size: 1.5em;
+    margin-left: 15px;
+    cursor: pointer;
+}
+
+.right-icons i:hover {
+    color: #f0cd07;
+}
+
+/*body*/
+body {
+    background: linear-gradient(to bottom right, #CBBCB8, #FCF1F1);;
+}
+
+h1 {
+    color: rgb(49, 46, 46);
+}
+
+
+main {
+    position: relative;
+    text-align: center;
+    width: 30%;
+    height: 20%;
+    margin-left: 5rem;
+    transform: translate(100%, 5%);
+   /* border: 2px solid rgb(205, 190, 50);*/
+    box-shadow: 10px 5px 5px darkkhaki;
+    border-radius: 20px;
+
+    backdrop-filter: blur(20px);
+    padding: 10px 20px;
+}
+
+.carousel .slide{
+    position: absolute;
+    margin-left: 5rem;
+    width: 60%;
+    height: 20rem;
+    border: none;
+}
+
+.slide img{
+    margin-top: 7rem;
+    transform: translateY(-26%);
+    /*border: 2px solid rgb(206, 224, 40);*/
+    border-radius: 5%;
+    width: 60%;
+    height: 50vh;
+}
+
+
+/*Todos*/
+
+.caja-title {
+    position: relative;
+    display: grid;
+    margin-top: 1rem;
+    gap: 1rem;
+    grid-auto-rows: 8rem;
+    grid-template-columns: repeat(auto-fill, minmax(min(100%, 25rem), 1fr));
+    width: 30%;
+    height: 6rem;
+    transform: translate(30rem);
+    /*transform: translateY(20%);*/
+   /* border: 2px solid rgb(205, 190, 50);*/
+    border: none;
+    box-shadow: 10px 5px 5px darkkhaki;
+    border-radius: 20px;
+    padding: 10px 20px;
+    /*Blur*/
+    background-color: #ffffff10;
+    backdrop-filter: blur(10px);
+}
+
+
+.title {
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 5%;
+    color: rgb(34, 34, 37);
+    font-size: 2rem;
+}
+
+
+/*HOME*/
+.carousel{
+    margin-top: 1%;
+    height: 22rem;
+    background-color: #ffffff10;
+    backdrop-filter: blur(10px);
+}
+img {
+    width: auto; /* o el ancho que desees */
+    height: auto; /* o la altura que desees */
+    object-fit: cover;
+    object-fit: contain;
+}
+
+.carousel-control-prev,
+.carousel-control-next {
+  color: black; /* Cambia #tuColorDeseado al código de color que prefieras */
+}
+
+
+@media screen and (max-width:414px) {
+    h1 {
+        color: blue;
+        font-size: 300px;
+    }
+
+    main {
+        width: 50%;
+        margin-top: 2%;
+        margin-left: -20%;
+        margin-bottom: 5%;
+       /* border: 2px solid black;
+        transform: translate(10%, 10%);*/
+    }
+}
+
+/*About*/
+
+.about-section{
+    padding: 5%;
+    margin-bottom: 10%;
+    position: relative;
+    border: none;
+    height: 90%;
+    justify-content: center;
+    text-align: center;
+}
+.caja-about {
+    /*Center Div*/
+   /* position: relative;*/
+    width: 90%;
+    height: 20%;
+    top: 35%;
+    left: 5%;
+    border-radius: 20px;
+    font-weight: bold;
+    /*Blur*/
+    background-color: #ffffff10;
+    backdrop-filter: blur(10px);
+}
+
+
+
+@media screen and (max-width:414px) {
+    h2 {
+        color: blue;
+        font-size: 300px;
+    }
+
+    .caja-about {
+        height: 50%;
+        padding: 5% 5%;
+        /*transform: translate(50%, 50%);*/
+    }
+}
+
+@media screen and (max-width:375px) {
+    .caja-title {
+        height: 1px;
+    }
+
+    h2 {
+        color: blue;
+        font-size: 300px;
+    }
+
+    .caja-about {
+        height: 50%;
+        padding: 5% 5%;
+        font-size: 80%;
+        /*transform: translate(50%, 50%);*/
+    }
+}
+
+/*contact*/
+.caja-title-contact{
+    display: grid;
+    margin-top: 1rem;
+    
+    grid-auto-rows: 8rem;
+    grid-template-columns: repeat(auto-fill, minmax(min(100%, 25rem), 1fr));
+    width: 30%;
+    height: 5rem;
+    transform: translate(25rem);
+    /*transform: translateY(20%);
+    border: 2px solid rgb(205, 190, 50);*/
+    box-shadow: 10px 5px 5px darkkhaki;
+    border-radius: 20px;
+    padding: 10px 20px;
+    /*Blur*/
+    background-color: #ffffff10;
+    backdrop-filter: blur(10px);
+
+}
+
+.caja-form {
+    display: grid;
+    gap: 1rem;
+    grid-auto-rows: 8rem;
+    grid-template-columns: repeat(auto-fill, minmax(min(100%, 20rem), 1fr));
+    width: 30%;
+    height: 28rem;
+    transform: translate(100%, 2%);
+    /*border: 2px solid rgb(205, 190, 50);*/
+    box-shadow: 10px 5px 5px darkkhaki;
+    border-radius: 20px;
+    padding: 2% 2%;
+    /*Blur*/
+    background-color: #ffffff10;
+    backdrop-filter: blur(10px);
+}
+
+.contact-form {
+    display: grid;
+    width: 80%;
+    margin: 0 auto;
+    padding: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    margin: 5px 0 5px 0;
+    font-weight: bold;
+    color: #333;
+}
+
+input[type="text"],
+input[type="number"],
+input[type="email"],
+textarea {
+    padding: 1%;
+    margin-bottom: 1%;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 1rem;
+    width: 100%;
+    box-sizing: border-box;
+    /* Asegura que el padding y el borde se incluyan en el ancho total */
+}
+
+.message {
+    margin-bottom: 5%;
+}
+
+.aggBtn{
+    background-color: #e8e9eb;
+   /* border: 2px solid rgb(66, 8, 133);*/
+   display: inline-block;
+    color: black;
+    padding: 1%;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 1em;
+    align-self: center;
+    width: 10rem;
+}
+
+.aggBtn:hover{
+    color: #212529;
+    font-weight: bold;
+    background-color: #a49bd6;
+}
+
+.aggAncla{
+    display: inline-block;
+    color: black;
+    padding: 1%;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 1em;
+    align-self: center;
+   
+    text-decoration: none;
+}
+.aggAncla:hover{
+    font-weight: bold;
+    background-color: #a49bd6;
+}
+.ancla{
+    color: #d1d4d6;
+}
+.ancla:hover{
+    background-color: #bb2424;
+}
+
+button[type="submit"]{
+    background-color: #007BFF;
+    border: none;
+    color: white;
+    padding: 1% 12%;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 1em;
+    align-self: center;
+    width: max-content;
+}
+
+button[type="submit"]:hover {
+    color: #d1d4d6;
+    background-color: #1e1f1c;
+}
+
+
+@media screen and (max-width:375px) {
+    h1 {
+        color: blue;
+        font-size: 200px;
+    }
+
+
+    .caja-form {
+        border: 2px solid rgb(0, 255, 34);
+        width: 70%;
+        height: 5rem;
+        transform: translate(20%, 5%);
+    }
+
+
+    .contact-form {
+        font-size: 80%;
+        width: 80%;
+        bottom: 2%;
+        padding: 5%;
+        height: 25rem;
+
+    }
+
+}
+
+
+@media screen and (max-width:414px) {
+    .caja-title-contact {
+        width: 48%;
+        height: 7rem;
+        transform: translate(50%, 5%);
+    }
+
+
+
+    .caja-form {
+        /*   border: 2px solid rgb(255, 0, 0);*/
+        width: 70%;
+        height: 30rem;
+        transform: translate(20%, 5%);
+    }
+
+
+    .contact-form {
+        font-size: 90%;
+        width: 80%;
+        bottom: 2%;
+        padding: 10%;
+
+    }
+}
+
+/*shop*/
+.product-container {
+    display: grid;
+    gap: 1rem;
+    grid-auto-rows: 22rem;
+    grid-template-columns: repeat(auto-fill, minmax(min(100%, 25rem), 1fr));
+    margin-left: 5%;
+    margin-top: 5%;
+  
+}
+
+.product-container h3{
+    font-size: large;
+ 
+}
+
+.product-card img {
+    max-width: 50%;
+    height: 50%;
+    padding: 0.5%;
+    border-radius: 10px;
+    margin-bottom: -10%;
+}
+
+.product-card {
+    background-color: #fff;
+   /* border: 1px solid #ddd;*/
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 2% 2% 2% 2%; 
+    overflow: hidden;
+    width: 220px;
+    transition: transform 0.2s;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    box-sizing: border-box;
+}
+
+.description {
+    font-size: x-small;
+    width: 85%;
+    height: 20%;
+    overflow: auto;
+}
+
+.price {
+    padding: 5%;
+    margin-top: 5%;
+    width: 80%;
+   /* border: 1px solid gray;*/
+    border-radius: 20px;
+    background-image: linear-gradient(to right, rgba(255, 187, 0, 0.795), rgb(243, 243, 235));
+}
+
+.price h4 {
+    font-size: medium;
+    color: red;
+}
+
+
+.btn-comprar{
+    font-size: small;
+   font-weight: bold;
+    color: red;
+    border: none;
+}
+
+.btn-comprar a{
+    font-size: large;
+    color: red;
+    text-decoration: none;
+}
+@media screen and (max-width:375px) {
+    .title {
+        color: rgb(23, 23, 24);
+        font-size: 1.5rem;
+    }
+}
+
+@media screen and (max-width:414px) {
+    .title h2{
+        color: rgb(234, 234, 240);
+        font-size: 300px;
+    }
+    .caja-title {
+        width: 48%;
+        height: 7rem;
+        transform: translate(50%, 5%);
+    }
+
+    .product-container {
+        transform: translate(10%, 1%);
+
+    }
+}
+
+/*LOGIN Y REGISTER*/
+
+
+/* Estilos para las secciones de Registro y Login */
+.register-section,
+.login-section {
+    display: flex;
+    /* Utiliza el modelo de caja flex para la disposición */
+    flex-direction: column;
+    /* Organiza los elementos en una columna */
+    align-items: center;
+    /* Centra horizontalmente los elementos */
+    margin: 50px;
+    /* Añade un margen de 50 píxeles alrededor */
+}
+
+.caja-title-login {
+    display: grid;
+    gap: 1rem;
+    grid-auto-rows: 8rem;
+    grid-template-columns: repeat(auto-fill, minmax(min(100%, 25rem), 1fr));
+    margin-bottom: 2rem;
+    height: 5rem;
+
+   /* border: 2px solid rgb(205, 190, 50);*/
+    box-shadow: 10px 5px 5px darkkhaki;
+    border-radius: 20px;
+    padding: 10px 20px;
+    /*Blur*/
+    background-color: #ffffff10;
+    backdrop-filter: blur(10px);
+}
+
+.register-form,
+.login-form {
+    display: flex;
+    /* Utiliza el modelo de caja flex para la disposición */
+    flex-direction: column;
+    /* Organiza los elementos en una columna */
+    width: 100%;
+    /* Establece el ancho al 100% del contenedor padre */
+    max-width: 400px;
+    /* Establece el ancho máximo del formulario a 400 píxeles */
+    border-radius: 1rem;
+    padding: 10px;
+
+    /*Blur*/
+    background-color: #ffffff10;
+    backdrop-filter: blur(10px);
+}
+
+.register-form label,
+.login-form label {
+    margin-top: 10px;
+    /* Añade un margen superior de 10 píxeles */
+    margin-bottom: 5px;
+    /* Añade un margen inferior de 5 píxeles */
+}
+
+.register-form input,
+.login-form input {
+    width: 100%;
+    /* Establece el ancho al 100% del contenedor padre */
+    padding: 10px;
+    /* Añade un relleno de 10 píxeles */
+    margin-bottom: 20px;
+    /* Añade un margen inferior de 20 píxeles */
+    border: 1px solid #ccc;
+    /* Establece un borde de 1 píxel de color gris claro */
+    border-radius: 5px;
+    /* Redondea las esquinas con un radio de 5 píxeles */
+    box-sizing: border-box;
+    /* Incluye el relleno y el borde en el tamaño total del elemento */
+}
+
+.icon {
+    position: absolute;
+    height: 20%;
+    top: 56%;
+    right: 8px;
+    transform: translateY(-50%);
+    opacity: 0.3;
+    cursor: pointer;
+}
+
+.icon:hover {
+    opacity: 0.8;
+}
+
+.icon-reg {
+    position: absolute;
+    height: 10%;
+    top: 54%;
+    right: 8px;
+    transform: translateY(-50%);
+    opacity: 0.3;
+    cursor: pointer;
+}
+
+.icon-reg:hover {
+    opacity: 0.8;
+}
+
+.icon-reg-conf {
+    position: absolute;
+    height: 10%;
+    top: 74%;
+    right: 8px;
+    transform: translateY(-50%);
+    opacity: 0.3;
+    cursor: pointer;
+}
+
+.icon-reg-conf:hover {
+    opacity: 0.8;
+}
+
+.register-form button,
+.login-form button {
+    padding: 10px 20px;
+    /* Añade un relleno de 10 píxeles arriba y abajo, y 20 píxeles a los lados */
+    background-color: #28a745;
+    /* Establece el color de fondo a verde */
+    color: white;
+    /* Establece el color del texto a blanco */
+    border: none;
+    /* Elimina cualquier borde */
+    border-radius: 5px;
+    /* Redondea las esquinas con un radio de 5 píxeles */
+    cursor: pointer;
+    /* Cambia el cursor al pasar sobre el botón */
+    font-size: 16px;
+    /* Establece el tamaño de fuente a 16 píxeles */
+    transition: background-color 0.3s ease;
+    /* Añade una transición suave para el color de fondo */
+}
+
+.register-form button:hover,
+.login-form button:hover {
+    background-color: #218838;
+    /* Cambia el color de fondo cuando el botón es presionado */
+}
+
+
+/*Tabla*/
+
+.caja-tabla {
+    display: flex;
+    position: absolute;
+    top: 31%;
+    left: 10%;
+    height: 20rem;
+    background: #218838;
+  /*  border: 2px solid red;*/
+  border-radius: 5% 10%;
+    width: 80%;
+    overflow: auto;
+    overflow-x: auto;
+}
+
+.header-fixed {
+    display: block;
+    position: relative;
+    height: 100%;
+    width: 100%;
+    /*la que necesites*/
+    max-height: 80vh;
+    /*la que necesites*/
+    overflow: auto;
+  }
+  
+  .header-fixed thead,
+  .header-fixed tbody {
+    display: block;
+  }
+  
+  .header-fixed thead {
+   width: 100%;
+    position: sticky;
+    display: inline-block;
+    top: 0;
+  }
+  
+  .header-fixed thead tr > th {
+
+      background: #212529;
+      border-color: #32383e;
+      color: #fff;
+      margin: auto;
+      /*padding: 5px 20px 5px 20px;*/
+  }
+  
+  .header-fixed tr {
+    display: flex;
+  }
+  
+  .header-fixed th,
+  .header-fixed td {
+    width: 30%;
+    min-width: 150px;
+    /*La que necesites*/
+    max-width: 100rem;
+    /*La que necesites
+    padding: 0.2em;*/
+    padding: 1%;
+   border: 1px solid blueviolet;
+  }
+
+  body .containerBtn{
+   display: flex;
+    position: absolute;
+   margin-top: 17rem;
+    margin-left: 45%;
+    border: 1px solid green;
+    width: max-content;
+  }
+
+  .header-fixed td button,
+  .header-fixed td a {
+    background-color: #007BFF;
+    border: none;
+    color: white;
+    margin-top: 5%;
+    margin-left: 50%;
+    cursor: pointer;
+    border-radius: 5px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 2em;
+    
+}
+
+
+/*Exito*/
+.contenedor{
+    position: relative;
+    text-align: center;
+    width: 30%;
+    height: 20%;
+    margin-top: 10%;
+    margin-left: 5%;
+    /*transform: translate(100%, 50%);*/
+    border: 2px solid rgb(205, 190, 50);
+    box-shadow: 10px 5px 5px darkkhaki;
+    border-radius: 20px;
+
+    backdrop-filter: blur(20px);
+    padding: 10px 20px;
+}
+
+@media screen and (max-width:414px) {
+
+    .contenedor {
+        width: 50%;
+        transform: translate(50%, 50%);
+    }
+}
+
+
+/*Read*/
+.fa-pencil,
+.fa-trash{
+    font-size: 1rem;
+    width: 5rem;
+    justify-items: center;
+    align-items: center;
+    justify-content: center;
+    margin-top: 1rem;
+  /*  transform: translateY(5rem);*/
+}
+
+.editarBorrar{
+ /*   position: relative;*/
+   justify-content: center;
+   justify-items: center;
+    align-items: center;
+}
+/*Agregate*/
+
+.caja-form-agrega {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    grid-auto-rows: 8rem;
+    grid-template-columns: repeat(auto-fill, minmax(min(100%, 20rem), 1fr));
+    justify-content: center;
+    align-items: center;
+    width: 30%;
+    height: 30rem;
+    transform: translate(120%, 5%);
+    border: 2px solid rgb(205, 190, 50);
+    box-shadow: 10px 5px 5px darkkhaki;
+    border-radius: 20px;
+    padding: 2% 2%;
+    /*Blur*/
+    background-color: #ffffff10;
+    backdrop-filter: blur(10px);
+}
+.agrega-form {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid rgb(104, 50, 205);
+    width: 80%;
+    height: 80%;
+    margin: auto;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    margin: 10px 0 5px 0;
+    font-weight: bold;
+    color: #333;
+}
+
+input[type="text"],
+input[type="number"],
+input[type="email"],
+textarea {
+    padding: 2%;
+    margin-bottom: 2%;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 1em;
+    width: 100%;
+    box-sizing: border-box;
+    /* Asegura que el padding y el borde se incluyan en el ancho total */
+}
+
+.message {
+    margin-bottom: 10%;
+}
+
+button[type="submit"] {
+    background-color: #007BFF;
+    border: none;
+    color: white;
+    margin-top: 5%;
+  /*  padding: 2% 12%;*/
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 1em;
+   /* align-self: center;*/
+    width: 100%;
+}
+
+button[type="submit"]:hover {
+    background-color: #0056b3;
+}
+
+.sesion{
+    display: flex;
+    position: absolute;
+    transform: translate(60rem, -5rem);
+    width: 20rem;
+    border: 1px solid black;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+
+
+}
+
+.logout{
+   
+    text-decoration: none;
+}
+
+@media screen and (max-width:414px) {
+    .caja-form-agrega {
+        transform: translate(10%, 10%);
+        width: 80%;
+        height: 80%;
+       
+    }
+
+  /*  main {
+        width: 50%;
+        transform: translate(50%, 50%);
+    }*/
+}
+
+@media screen and (max-width:430px) {
+    .caja-form-agrega {
+        transform: translate(10%, 10%);
+        width: 80%;
+        height: 80%;
+       
+    }
+}*
+
+/*UPDATE*/
+.caja-title-update {
+    display: grid;
+    margin-top: 1rem;
+    gap: 1rem;
+    grid-auto-rows: 8rem;
+    grid-template-columns: repeat(auto-fill, minmax(min(100%, 25rem), 1fr));
+    width: 30%;
+    height: 6rem;
+    transform: translate(30rem);
+    /*transform: translateY(20%);*/
+    border: 2px solid rgb(205, 190, 50);
+    box-shadow: 10px 5px 5px darkkhaki;
+    border-radius: 20px;
+    padding: 10px 20px;
+    /*Blur*/
+    background-color: #ffffff10;
+    backdrop-filter: blur(10px);
+}
+.caja-form-agrega {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    grid-auto-rows: 8rem;
+    grid-template-columns: repeat(auto-fill, minmax(min(100%, 20rem), 1fr));
+    justify-content: center;
+    align-items: center;
+    width: 30%;
+    height: 30rem;
+    transform: translate(120%, 5%);
+    border: 2px solid rgb(205, 190, 50);
+    box-shadow: 10px 5px 5px darkkhaki;
+    border-radius: 20px;
+    padding: 2% 2%;
+    /*Blur*/
+    background-color: #ffffff10;
+    backdrop-filter: blur(10px);
+}
+
+/*Mi carrito */ 
+.container {
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+    background: white;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+.left {
+    flex: 2;
+    margin-right: 20px;
+}
+
+.right {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+.product {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    background: #fff;
+    border: 1px solid #ddd;
+    padding: 10px;
+    border-radius: 8px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+
+.product img {
+    max-width: 100px;
+    margin-right: 20px;
+}
+
+.product-info {
+    flex: 1;
+}
+
+.product-info h2 {
+    margin: 0;
+    font-size: 18px;
+}
+
+.product-controls {
+    display: flex;
+    align-items: center;
+}
+
+.quantity-btn {
+    background: #ddd;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+    border-radius: 5px;
+    margin: 0 5px;
+}
+
+.quantity-input {
+    width: 40px;
+    text-align: center;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.price {
+    margin-left: 20px;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.delete-btn {
+    background: #ff4d4d;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.total-container {
+    background: #f9f9f9;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.total-container p {
+    font-size: 18px;
+    margin: 0 0 20px 0;
+}
+
+.buy-btn {
+    background: #28a745;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.buy-btn:hover {
+    background: #218838;
+}

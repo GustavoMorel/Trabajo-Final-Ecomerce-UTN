@@ -1,0 +1,49 @@
+<%- include('../partials/head')%>
+
+    <div class="container">
+        <div class="left">
+            <h2>Mi carrito</h2>
+
+            <% if (compra.length> 0) { %>
+                <ul>
+                    <% compra.forEach(item=> { %>
+                        <li><strong>
+                                <%= item.nombre %>
+                            </strong> - $<%= item.precio.toFixed(2) %>
+                        </li>
+                        <% }) %>
+                </ul>
+                <p>Total: $<%= compra.reduce((total, item)=> total + item.precio, 0).toFixed(2) %></p>
+                <form action="/productos/purchase">
+                    <button type="submit">Finalizar compra</button>
+                </form>
+
+                <% } else { %>
+                    <p>Tu carrito está vacío.</p>
+                    <% } %>
+                        <form action="/productos/shop">
+                            <button type="submit">Seguir comprando</button>
+                        </form>
+
+        </div>
+
+        <div class="right">
+            <div class="total-container">
+                <form action="/productos/purchase">
+                    <p>Total: <strong>$<%= compra.reduce((total, item)=> total + item.precio, 0).toFixed(2) %>
+                                %></strong></p>
+                    <button type="submit" class="buy-btn">Comprar</button>
+                </form>
+            </div>
+
+            <div>
+                <form action="/productos/purchase">
+                    <button type="submit">Finalizar compra</button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+
+
+    <%-include('../partials/footer')%>

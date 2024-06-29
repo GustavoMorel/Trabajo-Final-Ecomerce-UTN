@@ -1,0 +1,21 @@
+<%- include('../partials/head')%>
+
+<main>
+    <h2>Carrito de Compras</h2>
+    <% if (cart.length > 0) { %>
+        <ul>
+            <% cart.forEach(item => { %>
+                <li><strong><%= item.name %></strong> - $<%= item.price.toFixed(2) %></li>
+            <% }) %>
+        </ul>
+        <p>Total: $<%= cart.reduce((total, item) => total + item.price, 0).toFixed(2) %></p>
+        <form action="/" method="POST" style="display: inline;">
+            <button type="submit">Finalizar compra</button>
+        </form>
+        <a href="/" class="button">Seguir comprando</a>
+    <% } else { %>
+        <p>Tu carrito está vacío.</p>
+        <a href="/" class="button">Seguir comprando</a>
+    <% } %>
+</main>
+<%-include('../partials/footer')%>

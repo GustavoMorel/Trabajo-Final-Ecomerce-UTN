@@ -1,0 +1,49 @@
+<%- include('../partials/head')%>
+
+    <div class="container">
+        <div class="left">
+            <h2>Mi carrito</h2>
+
+            <div class="product">
+                <img src="/images/<%= product.imagen %>" alt="">
+                <div class="product-info">
+                    <h2>
+                        <%= product.nombre_producto %>
+                    </h2>
+                    <p>
+                        <%= product.descripcion %>
+                    </p>
+                    <button class="delete-btn">Eliminar</button>
+                </div>
+
+                <div class="product-controls">
+                    <button class="quantity-btn">-</button>
+                    <input type="text" class="quantity-input">
+                    <button class="quantity-btn">+</button>
+                    <span class="price"><strong>$ <%= product.precio %> </strong></span>
+                </div>
+
+            </div>
+            <form action="/productos/shop">
+                <button type="submit">Seguir comprando</button>
+            </form>
+
+        </div>
+
+        <div class="right">
+            <div class="total-container">
+                <p>Total: <strong>$<%= product.precio %></strong></p>
+                <button class="buy-btn">Comprar</button>
+            </div>
+
+            <div>
+                <form action="/" style="display: inline;">
+                    <button type="submit">Finalizar compra</button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+
+
+    <%-include('../partials/footer')%>

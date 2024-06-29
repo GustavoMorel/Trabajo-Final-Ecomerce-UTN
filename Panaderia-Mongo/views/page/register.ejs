@@ -1,0 +1,35 @@
+<%- include('../partials/head')%>
+
+
+    <section class="register-section">
+        <div class="caja-title-login">
+            <div class="title-login">
+                <h2>Registrate</h2>
+            </div>
+        </div>
+
+        <form action="/auth/register" class="register-form" method="post">
+
+            <label for="username">Nombre de usuario:</label>
+            <input type="text" id="username" name="username" required>
+
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="password">Contraseña:</label>
+            <input type="password" id="password" class="passwordreg" name="password">
+            <img src="/images/show.jpg" class="icon-reg" alt="" id="Ojo">
+
+            <label for="confirmarPassword">Confirmar contraseña:</label>
+            <input type="password" id="confirm-password" name="confirm-password">
+            <img src="/images/show.jpg" class="icon-reg-conf" alt="" id="Ojoconf">
+
+            <button type="submit">Registrar</button>
+            <p>¿Ya tienes cuenta? <a href="/login">Inicia sesión</a></p>
+        </form>
+    </section>
+
+    
+    <script src="/js/code1.js"></script>
+    <%- include('../partials/footer')%>

@@ -1,0 +1,30 @@
+<%- include('../partials/head')%>
+
+    <div class="caja-title">
+        <div class="title">
+            <h2>Agregar Producto</h2>
+        </div>
+    </div>
+
+    <div class="caja-form-agrega">
+        <div class="agrega-form">
+            <form action="/admin/nuevoproducto" id="nuevoProductoForm" method="post">
+
+                <label for="">Nombre de producto:</label>
+                <input type="text" name="nombre_producto">
+
+                <label for="">Descripción:</label>
+                <input type="text" name="descripcion">
+
+                <label for="">Precio</label>
+                <input type="number" name="precio">
+
+                <button type="submit" class="agregarProductosBtn">Enviar producto</button>
+
+            </form>
+        </div>
+    </div>
+
+
+
+    <%- include('../partials/footer')%>

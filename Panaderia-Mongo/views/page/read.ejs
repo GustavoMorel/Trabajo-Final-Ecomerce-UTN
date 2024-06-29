@@ -1,0 +1,61 @@
+<%- include('../partials/head')%>
+
+
+    <div class="caja-title">
+        <div class="title">
+            <h2>Todos los Productos</h2>
+        </div>
+    </div>
+
+<div class="sesion">
+    <a class="logout" href="/auth/logout">Cerrar Sesion</a>
+</div>
+    <div class="product-container">
+        <div class="caja-tabla">
+            <table class="header-fixed" border="1">
+                <thead>
+                    <tr>
+                        <th>ID</th>
+                        <th>Nombre de Producto</th>
+                        <th>Descripción</th>
+                        <th>Precio</th>
+                        <th>Acción</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <% products.forEach(product=> { %>
+                        <tr>
+                            <td>
+                                <%= product.id %>
+                            </td>
+                            <td>
+                                <%= product.nombre %>
+                            </td>
+                            <td>
+                                <%= product.descripcion %>
+                            </td>
+                            <td>
+                                <%= product.precio %>
+                            </td>
+                            <td class="editarBorrar">
+                                <a href="/admin/editarproducto/<%= product.id %>"><i class="fas fa-pencil"></i></a>
+
+                                <form action="/admin/delete/<%= product.id %>?_method=DELETE" method="post">
+                                    <button><i class="fas fa-trash"></i></button>
+                                </form>
+                            </td>
+                        </tr>
+
+                        <% }) %>
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+    <div class="containerBtn">
+        <button class="aggBtn">
+            <a href="/admin/agregate" class="aggAncla">Agregar Producto</a>
+        </button>
+    </div>
+
+    <%-include('../partials/footer')%>

@@ -1,0 +1,34 @@
+<%- include('../partials/head')%>
+
+<div class="container">
+    <div class="left">
+        <h2>Mi carrito</h2>
+        <div class="product">
+            
+            <div class="product-info">
+                <h2></h2>
+                <p></p>
+                <button class="delete-btn">Eliminar</button>
+            </div>
+
+            <div class="product-controls">
+                <button class="quantity-btn">-</button>
+                <input type="text" class="quantity-input">
+                <button class="quantity-btn">+</button>
+                <span class="price"><strong>$</strong></span>
+            </div>
+
+        </div>
+    </div>
+
+    <div class="right">
+        <div class="total-container">
+            <p>Total: <strong>$/strong></p>
+            <button class="buy-btn">Comprar</button>
+        </div>
+    </div>
+</div>
+
+
+
+<%-include('../partials/footer')%>
